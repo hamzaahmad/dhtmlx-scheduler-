@@ -1,0 +1,39 @@
+doctype html
+head
+  meta(http-equiv='text/html', content='text/html; charset=utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  script(type='text/javascript', src='js/raphael.min.js')
+  script(type='text/javascript', src='js/raphael.icons.min.js')
+  script(type='text/javascript', src='js/wheelnav.min.js')
+  script(src='codebase/dhtmlxscheduler.js', type='text/javascript', charset='utf-8')
+  script(src='codebase/dhtmlxscheduler_units.js', type='text/javascript', charset='utf-8')
+  link(rel='stylesheet', href='codebase/dhtmlxscheduler.css', type='text/css', media='screen', title='no title', charset='utf-8')
+  script(src='https://code.jquery.com/jquery-3.1.1.min.js')
+  script(type='text/javascript', src='js/jquery-ui.min.js')
+  link(rel='stylesheet', type='text/css', href='css/jquery-ui.min.css')
+  script(type='text/javascript', src='js/main.js')
+  link(rel='stylesheet', type='text/css', href='css/datepicker.css')
+  title Task Manger 
+  style(type='text/css', media='screen').
+    html, body{
+    margin:0;
+    padding:0;
+    height:100%;
+    overflow:hidden;
+    }
+script.
+body
+  #scheduler_here.dhx_cal_container(style='float: right ;width:80%; height:99%; top:3px; margin-right:4px; border-radius: 4px; ')
+    .dhx_cal_navline
+      .dhx_cal_date
+    .dhx_cal_header
+    .dhx_cal_data
+    #piemenu(data-wheelnav='', data-wheelnav-slicepath='DonutSlice', data-wheelnav-rotateoff='', data-wheelnav-navangle='270', data-wheelnav-cssmode='', data-wheelnav-init='')
+      div(data-wheelnav-navitemtext='Home', onmouseup='alert("still need work.");')
+      div(data-wheelnav-navitemtext='Filter', onmouseup='alert("still need work.");')
+      div(data-wheelnav-navitemtext='Search', onmouseup='alert("still need work.");')
+      div(data-wheelnav-navitemtext='Extra', onmouseup='alert("still need work.");')
+      div(data-wheelnav-navitemtext='logout', onmouseup='')
+    .datepicker.ll-skin-nigran
+body
+html
